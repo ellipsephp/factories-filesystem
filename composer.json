@@ -1,0 +1,43 @@
+{
+    "name": "ellipse/factories-filesystem",
+    "type": "library",
+    "description": "Collection of filesystem factories based on flysystem",
+    "keywords": [
+        "factory",
+        "factories",
+        "filesystem",
+        "flysystem"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/ellipsephp/factories-filesystem",
+    "support": {
+        "issues": "https://github.com/ellipsephp/factories-filesystem/issues",
+        "source": "https://github.com/ellipsephp/factories-filesystem"
+    },
+    "authors": [
+        {
+            "name": "pmall",
+            "email": "pierre.mallinjoud@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.1",
+        "league/flysystem": "^1.0"
+    },
+    "require-dev": {
+        "peridot-php/peridot": "^1.19",
+        "peridot-php/leo": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ellipse\\Factories\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
