@@ -13,7 +13,7 @@ class LocalFilesystemFactory
      * @param string $root
      * @return \League\Flysystem\Filesystem
      */
-    public function create(string $root): Filesystem
+    public static function create(string $root): Filesystem
     {
         return (new LocalFilesystemFactory)($root);
     }
