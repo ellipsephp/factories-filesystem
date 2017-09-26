@@ -10,7 +10,9 @@ describe('LocalFilesystemFactory', function () {
 
         it('should proxy the ->__invoke() method', function () {
 
-            $test = LocalFilesystemFactory::create('root');
+            $root = sys_get_temp_dir();
+
+            $test = LocalFilesystemFactory::create($root);
 
             expect($test)->to->be->an->instanceof(Filesystem::class);
 
@@ -22,9 +24,11 @@ describe('LocalFilesystemFactory', function () {
 
         it('should return a new Filesystem with the given root', function () {
 
+            $root = sys_get_temp_dir();
+
             $factory = new LocalFilesystemFactory;
 
-            $test = $factory('root');
+            $test = $factory($root);
 
             expect($test)->to->be->an->instanceof(Filesystem::class);
 
